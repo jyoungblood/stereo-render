@@ -1,0 +1,23 @@
+{
+	"name": "jyoungblood/stereo-render",
+  "homepage": "https://github.com/jyoungblood/stereo-render",
+  "description": "PHP abstraction functions to help more easily render views for Slim Framework. Includes support for JSON, HTML, and Blade.",
+	"type": "library",
+  "license": "MIT",
+	"authors": [
+		{
+      "name": "Jonathan Youngblood",
+      "email": "jy@hxgf.io"
+		}
+	],
+	"keywords": ["utilities", "render abstractions", "view helpers", "blade", "slim"],
+  "require": {
+    "eftec/bladeone": "^4.13",
+    "eftec/bladeonehtml": "^2.4"
+  },
+	"autoload": {
+		"psr-4": {
+			"Stereo\\": ["src/"]
+		}
+	}
+}
