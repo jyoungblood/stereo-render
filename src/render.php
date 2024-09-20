@@ -49,18 +49,12 @@ class render {
 
   // return a rendered Blade template
   public static function blade_template($template, $data = []){
-    $cache_mode = 0;
-    if (isset($_ENV['BLADE_MODE'])){
-      if (strtolower($_ENV['BLADE_MODE']) == 'slow'){
-        $cache_mode = 1;
-      }
-      if (strtolower($_ENV['BLADE_MODE']) == 'fast'){
-        $cache_mode = 2;
-      }
-      if (strtolower($_ENV['BLADE_MODE']) == 'debug'){
-        $cache_mode = 5;
-      }
-    }
+    $cache_modes = [
+      'slow' => 1,
+      'fast' => 2,
+      'debug' => 5
+    ];
+    $cache_mode = isset($_ENV['BLADE_MODE']) ? ($cache_modes[strtolower($_ENV['BLADE_MODE'])] ?? 0) : 0;
     $blade = new BladeHTML(
       isset($_ENV['BLADE_VIEWS_PATH']) ? $_ENV['BLADE_VIEWS_PATH'] : 'views',
       isset($_ENV['BLADE_CACHE_PATH']) ? $_ENV['BLADE_CACHE_PATH'] : 'cache',
