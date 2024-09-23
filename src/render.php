@@ -2,7 +2,7 @@
 
 /**
  * @package    STEREO Render
- * @version    1.0.0
+ * @version    1.0.1
  * @author     Jonathan Youngblood <jonathan.youngblood@gmail.com>
  * @license    https://github.com/jyoungblood/stereo-render/blob/master/LICENSE.md (MIT License)
  * @source     https://github.com/jyoungblood/stereo-render
