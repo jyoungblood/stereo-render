@@ -4,7 +4,7 @@
 
 These functions aim to provide a simplified and standardized interface for rendering various types of data-driven responses as PSR-7 objects for use with Slim.
 
-Although it can be used with any Slim4 project, it's specifically designed for use with the [STEREO](https://github.com/jyoungblood/stereo) internet toolkit.
+Although this package can be used with any Slim4 project, it's specifically designed for use with the [STEREO](https://github.com/jyoungblood/stereo) internet toolkit.
 
 
 # Installation

@@ -70,7 +70,7 @@ class render {
     $body->write(
       render::blade_template(
         $args['template'],
-        $args['data']
+        $args['data'] ?? []
       )
     );
     return $res->withStatus($status);
